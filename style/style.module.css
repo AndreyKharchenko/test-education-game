@@ -1,0 +1,22 @@
+.step {
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.circleWrapper {
+    padding: 0.2rem 1rem;
+    position: relative;
+    z-index: 999;
+}
+
+.step:not(:last-child) .circleWrapper::after {
+    content: '';
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    background-color: #FFD748;
+    margin: auto;
+    z-index: -1;
+}
